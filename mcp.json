@@ -1,0 +1,62 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp",
+        "--user-data-dir",
+        ".playwright-data"
+      ],
+      "disabled": false,
+      "autoApprove": [
+        "browser_snapshot",
+        "browser_navigate",
+        "browser_click",
+        "browser_wait_for",
+        "browser_navigate_back",
+        "browser_evaluate",
+        "browser_take_screenshot",
+        "browser_install",
+        "browser_press_key",
+        "browser_type",
+        "browser_run_code",
+        "browser_tabs",
+        "browser_fill_form",
+        "browser_console_messages",
+        "browser_select_option",
+        "browser_handle_dialog",
+        "browser_network_requests",
+        "browser_hover"
+      ],
+      "disabledTools": [
+        "browser_close"
+      ]
+    },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "chrome-devtools-mcp@latest"
+      ],
+      "disabled": true,
+      "autoApprove": [
+        "new_page",
+        "take_snapshot",
+        "navigate_page",
+        "list_console_messages",
+        "close_page",
+        "list_network_requests",
+        "take_screenshot",
+        "list_pages",
+        "get_console_message",
+        "evaluate_script",
+        "click",
+        "fill",
+        "press_key",
+        "get_network_request",
+        "wait_for",
+        "fill_form",
+        "select_page"
+      ]
+    }
+  }
+}
