@@ -4,6 +4,8 @@
       "command": "npx",
       "args": [
         "@playwright/mcp",
+        "--caps",
+        "devtools",
         "--user-data-dir",
         ".playwright-data"
       ],
@@ -26,7 +28,14 @@
         "browser_select_option",
         "browser_handle_dialog",
         "browser_network_requests",
-        "browser_hover"
+        "browser_hover",
+        "browser_resize",
+        "browser_drag",
+        "browser_file_upload",
+        "browser_start_video",
+        "browser_stop_video",
+        "browser_start_tracing",
+        "browser_stop_tracing"
       ],
       "disabledTools": [
         "browser_close"
